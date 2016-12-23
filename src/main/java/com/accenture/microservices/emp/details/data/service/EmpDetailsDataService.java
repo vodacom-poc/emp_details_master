@@ -2,6 +2,7 @@ package com.accenture.microservices.emp.details.data.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,19 +29,41 @@ public class EmpDetailsDataService {
 	public static EmployeeRepository employeeRepository;
 	
 	public EmpDetailsDataService(EmployeeRepository employeeRepository){
-		this.employeeRepository = employeeRepository;
+		EmpDetailsDataService.employeeRepository = employeeRepository;
 	}
 
-	public Collection<EmployeeDetails> getEmployeeDetails(long id) throws Exception{
-		Collection<EmployeeDetails> emplList = new ArrayList<EmployeeDetails>();
-//		//this.repository.findByEmployeeId(id);
-		log.info("path variable: "+id);
-		log.info(" employee: "+this.employeeRepository.findById(id));
-		for (EmployeeDetails empl : this.employeeRepository.findById(id)){
-			log.info("Employee details:"+empl.toString());
-			emplList.add(empl);
-		}
-
+	public EmployeeDetails getEmployeeDetails(long id) throws Exception{
+		log.info("EmpDetailsDataService getEmployeeDetails Employee ID passed: "+id);
+		EmployeeDetails emplDetails = employeeRepository.findById(id);
+		log.info("EmpDetailsDataService getEmployeeDetails Employee Details:"+ emplDetails);
+		return emplDetails;
+	}
+	
+	public List<EmployeeDetails> getAllEmployees() throws Exception{
+		log.info("EmpDetailsDataService getAllEmployees ");
+		List<EmployeeDetails> emplList = new ArrayList<EmployeeDetails>();
+		emplList = employeeRepository.findAll();
+		log.info("EmpDetailsDataService getAllEmployees List:: " + emplList);
 		return emplList;
 	}
+	
+	public EmployeeDetails findEmployeeByLastName(String lastName) throws Exception{
+		log.info("EmpDetailsDataService findEmployeeByLastName Employee Lastname passed: "+lastName);
+		EmployeeDetails emplDetails = employeeRepository.findByLastName(lastName);
+		log.info("EmpDetailsDataService findEmployeeByLastName Employee Details:"+ emplDetails);
+		return emplDetails;
+	}
+	
+	public boolean deleteEmployeeDetails(long id) throws Exception{
+		log.info("EmpDetailsDataService DeleteEmployeeDetails Employee ID passed: "+id);
+		employeeRepository.delete(id);
+		return true;
+	}
+	
+	public boolean checkEmployeeExists(long id) throws Exception{
+		log.info("EmpDetailsDataService DeleteEmployeeDetails Employee ID passed: "+id);
+		boolean result = employeeRepository.exists(id);
+		return result;
+	}
+	
 }
