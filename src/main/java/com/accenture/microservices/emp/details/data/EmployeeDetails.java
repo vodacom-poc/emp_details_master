@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.accenture.microservices.emp.details;
+package com.accenture.microservices.emp.details.data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import javax.persistence.Id;
  *
  */
 @Entity
-class Employee{
+public class EmployeeDetails{
 		@Id
 	    @GeneratedValue(strategy=GenerationType.AUTO)
 	    public long id;
@@ -24,11 +24,11 @@ class Employee{
 	    public String email;
 	    public long employeeId;
 
-	    public Employee() {}
+	    public EmployeeDetails() {}
 
 	   
 
-	    public Employee(String firstName, String lastName, long age, String address, String email, long employeeId) {
+	    public EmployeeDetails(String firstName, String lastName, long age, String address, String email, long employeeId) {
 			this.firstName = firstName;
 			this.lastName = lastName;
 			this.age = age;
