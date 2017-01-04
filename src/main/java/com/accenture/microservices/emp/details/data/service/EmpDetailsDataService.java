@@ -38,7 +38,7 @@ public class EmpDetailsDataService {
 		log.info("EmpDetailsDataService getEmployeeDetails Employee Details:"+ emplDetails);
 		return emplDetails;
 	}
-	
+		
 	public List<EmployeeDetails> getAllEmployees() throws Exception{
 		log.info("EmpDetailsDataService getAllEmployees ");
 		List<EmployeeDetails> emplList = new ArrayList<EmployeeDetails>();

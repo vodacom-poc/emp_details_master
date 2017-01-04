@@ -1,6 +1,7 @@
 package com.accenture.microservices.emp.details.service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.accenture.microservices.emp.details.data.EmployeeDetails;
 import com.accenture.microservices.emp.details.data.service.EmpDetailsDataService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 
 
@@ -31,10 +33,22 @@ public class EmpDetailsService {
 	@Autowired
 	EmpDetailsDataService empDetailsDataService;
 	
+	@HystrixCommand(fallbackMethod="handleEmployeeDetails")
 	public EmployeeDetails getEmployeeDetails(long id) throws Exception{
 		log.info("EmpDetailsService getEmployeeDetails: Employee ID "+id);
 		EmployeeDetails empDetails = empDetailsDataService.getEmployeeDetails(id);
 		return empDetails;
+	}
+	
+	
+	public EmployeeDetails handleEmployeeDetails(long id){
+		
+		EmployeeDetails employeeDetails=new EmployeeDetails();
+		employeeDetails.setFirstName("Unknown");
+
+		
+		return employeeDetails;
+		
 	}
 	public boolean checkEmployeeExists(long id)throws Exception{
 		log.info("EmpDetailsService checkEmployeeExists: Employee ID "+id);
@@ -44,12 +58,20 @@ public class EmpDetailsService {
 		return result;
 	}
 	
+	@HystrixCommand(fallbackMethod="handleGetAllEmployees")
 	public List<EmployeeDetails> getAllEmployees() throws Exception{
 		log.info("EmpDetailsService getAllEmployees ");
 		List<EmployeeDetails> emplList = new ArrayList<EmployeeDetails>();
 		emplList = empDetailsDataService.getAllEmployees();
 		log.info("EmpDetailsService getAllEmployees List:: " + emplList);
 		return emplList;
+	}
+	
+	public List<EmployeeDetails>  handleGetAllEmployees(){
+		
+		
+		return Arrays.asList(new EmployeeDetails());
+		
 	}
 	
 	public String deleteEmployeeDetails(long id) throws Exception{

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+# LOGGING
+logging:
+  path: log
+  file: log/application.log
+# levels for loggers, e.g. "logging.level.org.springframework=DEBUG" (TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF)
+  level.org.springframework: INFO
+  
+# eureka server registration
+eureka:
+    client:
+        serviceUrl:
+             defaultZone: http://54.90.195.96/eureka/
