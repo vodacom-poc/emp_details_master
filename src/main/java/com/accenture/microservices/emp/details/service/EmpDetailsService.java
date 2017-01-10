@@ -1,5 +1,7 @@
 package com.accenture.microservices.emp.details.service;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -41,8 +43,9 @@ public class EmpDetailsService {
 	}
 	
 	
-	public EmployeeDetails handleEmployeeDetails(long id){
+	public EmployeeDetails handleEmployeeDetails(long id,Throwable t){
 		
+		log.info("fallback method  handleEmployeeDetails called,the error thrown is: "+getErrorStackTrace(t));
 		EmployeeDetails employeeDetails=new EmployeeDetails();
 		employeeDetails.setFirstName("Unknown");
 
@@ -67,9 +70,9 @@ public class EmpDetailsService {
 		return emplList;
 	}
 	
-	public List<EmployeeDetails>  handleGetAllEmployees(){
+	public List<EmployeeDetails>  handleGetAllEmployees(Throwable t){
 		
-		
+		log.info("fallback method  handleGetAllEmployees called,the error thrown is: "+getErrorStackTrace(t));
 		return Arrays.asList(new EmployeeDetails());
 		
 	}
@@ -85,5 +88,18 @@ public class EmpDetailsService {
 			result = "Employee Does not Exist. Please provide an existing employee";
 		}
 		return result;
+	}
+	
+	public String getErrorStackTrace(Throwable t){
+		
+		if(t!=null){
+			StringWriter sw = new StringWriter();
+			PrintWriter pw = new PrintWriter(sw);
+			t.printStackTrace(pw);
+			return sw.toString();
+		}else {
+			return null;
+		}
+		
 	}
 }
