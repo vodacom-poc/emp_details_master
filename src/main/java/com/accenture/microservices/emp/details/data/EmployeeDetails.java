@@ -9,32 +9,33 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
- * @author j.venugopalan
+ * @author mahima.agarwal
  *
  */
 @Entity
 public class EmployeeDetails{
+	
 		@Id
 	    @GeneratedValue(strategy=GenerationType.AUTO)
-	    public long id;
-		public String firstName;
-		public String lastName;
-		public long age;
-	    public String address;
-	    public String email;
-	    public long employeeId;
+	    private long id;
+	    private String firstName;
+	    private String lastName;
+	    private long age;
+	    private String address;
+	    private String email;
+//	    public long employeeId;
 
 	    public EmployeeDetails() {}
 
 	   
 
-	    public EmployeeDetails(String firstName, String lastName, long age, String address, String email, long employeeId) {
+	    public EmployeeDetails(String firstName, String lastName, long age, String address, String email, long id) {
 			this.firstName = firstName;
 			this.lastName = lastName;
 			this.age = age;
 			this.address = address;
 			this.email = email;
-			this.employeeId = employeeId;
+			this.id = id;
 		}
 
 
@@ -147,29 +148,15 @@ public class EmployeeDetails{
 
 
 
-		/**
-		 * @return the employeeId
-		 */
-		public long getEmployeeId() {
-			return employeeId;
-		}
 
-
-
-		/**
-		 * @param employeeId the employeeId to set
-		 */
-		public void setEmployeeId(long employeeId) {
-			this.employeeId = employeeId;
-		}
 
 
 
 		@Override
 	    public String toString() {
 	        return String.format(
-	                "Employee[id=%d, firstName='%s', lastName='%s', age=%d, address='%s', email='%s', employeeId=%d]",
-	                id, firstName, lastName, age, address, email, employeeId);
+	                "Employee[id=%d, firstName='%s', lastName='%s', age=%d, address='%s', email='%s']",
+	                id, firstName, lastName, age, address, email);
 	    }
 
 }

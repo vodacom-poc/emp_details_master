@@ -19,12 +19,16 @@ import com.accenture.microservices.emp.details.data.EmployeeDetails;
 import com.accenture.microservices.emp.details.data.repository.EmployeeRepository;
 import com.accenture.microservices.emp.details.service.EmpDetailsService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 /**
  * @author j.venugopalan
  *
  */
 @RestController
 @SpringBootApplication
+@Api(tags = "Employee Details API")
 public class EmpDetailsController {
 	private static final Logger log = LoggerFactory.getLogger(EmpDetailsController.class);
 	
@@ -34,6 +38,7 @@ public class EmpDetailsController {
 	@Autowired
 	EmployeeRepository repository;
 	
+	@ApiOperation(value = "EmployeeDetails", nickname = "EmployeeDetails")
 	@RequestMapping(value = "/employees/{empId}",method = RequestMethod.GET)
 	public EmployeeDetails getEmployeeDetails(@PathVariable ("empId") long id) throws Exception{
 		log.info("EmpDetailsController path variable: Employee ID "+id);
@@ -53,6 +58,7 @@ public class EmpDetailsController {
 //		return result;
 //	}
 	
+	@ApiOperation(value = "GetAllEmployeeDetails", nickname = "GetAllEmployeeDetails")
 	@RequestMapping(value = "/employees",method = RequestMethod.GET)
 	public List<EmployeeDetails> getAllEmployees() throws Exception{
 		log.info("EmpDetailsController getAllEmployees ");
@@ -64,7 +70,7 @@ public class EmpDetailsController {
 		}
 		return emplList;
 	}
-	
+	@ApiOperation(value = "DeleteEmployeeDetails", nickname = "DeleteEmployeeDetails")
 	@RequestMapping(value = "/employees/{empId}",method = RequestMethod.DELETE)
 	public String deleteEmployee(@PathVariable ("empId") long id) throws Exception{
 		log.info("EmpDetailsController deleteEmployee: Employee ID "+id);
