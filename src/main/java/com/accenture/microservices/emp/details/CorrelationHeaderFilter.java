@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.details.service;
+package com.accenture.microservices.emp.details;
 
 import java.io.IOException;
 import java.util.UUID;

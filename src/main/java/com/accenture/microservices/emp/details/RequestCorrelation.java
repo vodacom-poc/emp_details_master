@@ -1,4 +1,4 @@
-package com.accenture.microservices.emp.details.service;
+package com.accenture.microservices.emp.details;
 
 /**
  * Utility class which stores ThreadLocal (Request) correlation Id.
