@@ -12712,3 +12712,860 @@ java.util.concurrent.TimeoutException: null
 56548 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$53490383-2] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - EmpDetailsDataService getEmployeeDetails Employee ID passed: 1
 56642 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$53490383-2] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - EmpDetailsDataService getEmployeeDetails Employee Details:Employee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
 56650 [http-nio-8081-exec-2] INFO  c.a.m.e.d.web.EmpDetailsController - EmpDetailsController getEmployeeDetails resultEmployee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
+2861 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53: startup date [Wed Feb 01 13:11:16 IST 2017]; root of context hierarchy
+3436 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+3756 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf9ad8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+5179 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - No active profile set, falling back to default profiles: default
+5262 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a791b66: startup date [Wed Feb 01 13:11:19 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+10815 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+12216 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+12741 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6034049e-7c3a-347f-ac30-dfe94c6a6324
+12966 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$55776f8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13226 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+13436 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0dfaa90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13836 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf9ad8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15731 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+15747 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+15749 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+16380 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16383 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11121 ms
+18924 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18928 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+18940 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+18941 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18942 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18943 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18944 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18944 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+18945 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+21280 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+21345 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21555 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+21560 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21564 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+21699 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22424 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+24571 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+24620 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+24759 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+36215 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/{empId}],methods=[GET]}" onto public com.accenture.microservices.emp.details.data.EmployeeDetails com.accenture.microservices.emp.details.web.EmpDetailsController.getEmployeeDetails(long) throws java.lang.Exception
+36247 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/{empId}],methods=[DELETE]}" onto public java.lang.String com.accenture.microservices.emp.details.web.EmpDetailsController.deleteEmployee(long) throws java.lang.Exception
+36248 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees],methods=[GET]}" onto public java.util.List<com.accenture.microservices.emp.details.data.EmployeeDetails> com.accenture.microservices.emp.details.web.EmpDetailsController.getAllEmployees() throws java.lang.Exception
+36249 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+36289 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+36291 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+36295 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+36302 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+36303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+36868 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+36870 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+36931 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52b6561b
+38734 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+38734 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+38738 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+38739 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38743 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+38744 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+38745 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38749 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+38751 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38752 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+38753 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+38755 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38756 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+38761 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38763 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+38764 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38767 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38793 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38794 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+38795 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+38797 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+38799 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+40311 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a791b66: startup date [Wed Feb 01 13:11:19 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+40746 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+40746 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+40903 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+46459 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+46460 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+47441 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+47552 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+47553 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+47554 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+47555 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+47557 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+47561 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+47613 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+47763 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+47792 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7a791b66,type=ConfigurationPropertiesRebinder]
+47802 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+47804 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+49435 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+49445 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+49485 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+49504 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+49507 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+49512 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+49517 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+49521 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+49526 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+49562 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+49571 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+49588 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+49596 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+49597 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+49706 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+49756 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+50161 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Starting poller
+50200 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+50237 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8081]
+50252 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-8081]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.accenture.microservices.emp.details.EmpDetailsMasterApplication.main(EmpDetailsMasterApplication.java:39)
+50255 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1186)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1175)
+	at com.accenture.microservices.emp.details.EmpDetailsMasterApplication.main(EmpDetailsMasterApplication.java:39)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969)
+	... 14 common frames omitted
+50307 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+50307 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+50321 [main] INFO  o.a.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+50322 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+50323 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+50328 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+50362 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+50364 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a791b66: startup date [Wed Feb 01 13:11:19 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+50367 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+50369 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+50374 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+50374 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+50375 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+50376 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+50394 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+50395 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+50401 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+50403 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+50413 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+3591 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53: startup date [Wed Feb 01 13:13:39 IST 2017]; root of context hierarchy
+4203 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf9ad8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4439 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+5656 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - No active profile set, falling back to default profiles: default
+5683 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45cff11c: startup date [Wed Feb 01 13:13:42 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+9268 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+10159 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+10498 [main] INFO  o.s.c.context.scope.GenericScope - BeanFactory id=6034049e-7c3a-347f-ac30-dfe94c6a6324
+10730 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$55776f8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11067 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+11200 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0dfaa90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11580 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ccf9ad8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+12543 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+12566 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+12568 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.5
+13191 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13196 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7513 ms
+15028 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15036 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+15042 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+15044 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15044 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15045 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15046 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15046 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+15047 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+16123 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+16161 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16371 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.11.Final}
+16375 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+16416 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+16544 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16904 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17569 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+17586 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+17639 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20443 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/{empId}],methods=[GET]}" onto public com.accenture.microservices.emp.details.data.EmployeeDetails com.accenture.microservices.emp.details.web.EmpDetailsController.getEmployeeDetails(long) throws java.lang.Exception
+20445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees],methods=[GET]}" onto public java.util.List<com.accenture.microservices.emp.details.data.EmployeeDetails> com.accenture.microservices.emp.details.web.EmpDetailsController.getAllEmployees() throws java.lang.Exception
+20446 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/{empId}],methods=[DELETE]}" onto public java.lang.String com.accenture.microservices.emp.details.web.EmpDetailsController.deleteEmployee(long) throws java.lang.Exception
+20449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+20454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20458 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20468 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20470 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20606 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+20607 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20629 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5923210
+21728 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21730 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21731 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+21732 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+21735 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+21736 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21737 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21738 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+21739 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+21740 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+21743 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+21743 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21746 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+21746 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21749 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21751 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21752 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21753 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+21755 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+21757 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+21758 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+21759 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+22676 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45cff11c: startup date [Wed Feb 01 13:13:42 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+22926 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22926 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23026 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+24591 [main] WARN  c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+24592 [main] INFO  c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+24755 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+24779 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+24780 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+24781 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+24783 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+24785 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+24789 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+24812 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+24848 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+24877 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=45cff11c,type=ConfigurationPropertiesRebinder]
+24895 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+24898 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+25247 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+25251 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+25407 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+25411 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+25416 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+25420 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+25424 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+25428 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+25431 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+25478 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+25486 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+25491 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+25495 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+25496 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+25590 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+25616 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+25916 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Starting poller
+25959 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+25981 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8081]
+26120 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+26179 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+26416 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employees
+26716 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+26882 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
+26882 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=2, firstName='Ann', lastName='Jee', age=34, address='Chennai', email='ann.jeeu@gmail.com']
+26883 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=3, firstName='Bann', lastName='Hee', age=36, address='Hydrabad', email='bann.hee@gmail.com']
+26883 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+26884 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=5, firstName='Dann', lastName='lee', age=28, address='Delhi', email='dann.lee@gmail.com']
+26885 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=6, firstName='Kann', lastName='Mde', age=45, address='Kolkata', email='kann.mde@gmail.com']
+26885 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Employee[id=7, firstName='Zann', lastName='Nke', age=53, address='Cochin', email='zann.nke@gmail.com']
+26890 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Started EmpDetailsMasterApplication in 25.97 seconds (JVM running for 28.697)
+42062 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+42063 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+42159 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
+42232 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - EmpDetailsController path variable: Employee ID 4
+42790 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$73916a5c-1] INFO  c.a.m.e.d.service.EmpDetailsService - EmpDetailsService getEmployeeDetails: Employee ID 4
+42791 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$73916a5c-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - EmpDetailsDataService getEmployeeDetails Employee ID passed: 4
+42831 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$73916a5c-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - EmpDetailsDataService getEmployeeDetails Employee Details:Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+42840 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - EmpDetailsController getEmployeeDetails resultEmployee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+169867 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+169868 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45cff11c: startup date [Wed Feb 01 13:13:42 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3f4faf53
+169871 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+169873 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+169877 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+169880 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+169881 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+169881 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+169893 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+169897 [RMI TCP Connection(2)-10.232.98.59] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000227: Running hbm2ddl schema export
+169903 [RMI TCP Connection(2)-10.232.98.59] INFO  o.h.tool.hbm2ddl.SchemaExport - HHH000230: Schema export complete
+169908 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+169976 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+169980 [localhost-startStop-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+170002 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+170003 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+170004 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+170008 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+170013 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+1701 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Correlation Id: - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@28dcca0c: startup date [Wed Feb 01 13:17:45 IST 2017]; root of context hierarchy
+1963 [background-preinit] INFO  o.h.validator.internal.util.Version - Correlation Id: - HV000001: Hibernate Validator 5.2.4.Final
+2201 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e42e129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2885 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - No active profile set, falling back to default profiles: default
+2907 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Correlation Id: - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609640d5: startup date [Wed Feb 01 13:17:46 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@28dcca0c
+5988 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Correlation Id: - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+6725 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Correlation Id: - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+7023 [main] INFO  o.s.c.context.scope.GenericScope - Correlation Id: - BeanFactory id=6034049e-7c3a-347f-ac30-dfe94c6a6324
+7177 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$96c0a32b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7241 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Correlation Id: - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+7430 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f228de2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7866 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e42e129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+9067 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat initialized with port(s): 8081 (http)
+9122 [main] INFO  o.a.catalina.core.StandardService - Correlation Id: - Starting service Tomcat
+9123 [main] INFO  o.a.catalina.core.StandardEngine - Correlation Id: - Starting Servlet Engine: Apache Tomcat/8.5.5
+9625 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring embedded WebApplicationContext
+9626 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Correlation Id: - Root WebApplicationContext: initialization completed in 6719 ms
+10859 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'dispatcherServlet' to [/]
+10863 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+10867 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'metricsFilter' to: [/*]
+10868 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'characterEncodingFilter' to: [/*]
+10869 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10873 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10874 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'requestContextFilter' to: [/*]
+10874 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+10876 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'applicationContextIdFilter' to: [/*]
+12217 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Building JPA container EntityManagerFactory for persistence unit 'default'
+12258 [main] INFO  o.h.jpa.internal.util.LogHelper - Correlation Id: - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12537 [main] INFO  org.hibernate.Version - Correlation Id: - HHH000412: Hibernate Core {5.0.11.Final}
+12540 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000206: hibernate.properties not found
+12544 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000021: Bytecode provider name : javassist
+12755 [main] INFO  o.h.annotations.common.Version - Correlation Id: - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+13303 [main] INFO  org.hibernate.dialect.Dialect - Correlation Id: - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+14070 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000227: Running hbm2ddl schema export
+14091 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000230: Schema export complete
+14130 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17718 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[GET]}" onto public com.accenture.microservices.emp.details.data.EmployeeDetails com.accenture.microservices.emp.details.web.EmpDetailsController.getEmployeeDetails(long) throws java.lang.Exception
+17721 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[DELETE]}" onto public java.lang.String com.accenture.microservices.emp.details.web.EmpDetailsController.deleteEmployee(long) throws java.lang.Exception
+17725 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees],methods=[GET]}" onto public java.util.List<com.accenture.microservices.emp.details.data.EmployeeDetails> com.accenture.microservices.emp.details.web.EmpDetailsController.getAllEmployees() throws java.lang.Exception
+17729 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+17740 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+17744 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+17746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+17751 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17752 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17950 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+17977 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18029 [main] INFO  c.n.config.DynamicPropertyFactory - Correlation Id: - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@52b6561b
+19233 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+19234 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+19241 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+19243 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19244 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+19246 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+19247 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19250 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+19252 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19254 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+19255 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+19256 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19258 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+19261 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19263 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+19264 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19266 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19269 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19271 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+19271 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+19273 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+19275 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Correlation Id: - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609640d5: startup date [Wed Feb 01 13:17:46 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@28dcca0c
+20888 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20889 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21054 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22622 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+22624 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22773 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+22786 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+22787 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+22788 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+22789 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshScope' has been autodetected for JMX exposure
+22791 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'environmentManager' has been autodetected for JMX exposure
+22797 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+22837 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+22873 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+22889 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=609640d5,type=ConfigurationPropertiesRebinder]
+22918 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+22921 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+23194 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 0
+23198 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+23207 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+23211 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+23215 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+23219 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+23223 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+23226 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+23229 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+23232 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+23236 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+23240 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+23244 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 2147483647
+23244 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Context refreshed
+23388 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Found 1 custom documentation plugin(s)
+23445 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Correlation Id: - Scanning for api listing references
+23938 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Correlation Id: - Starting poller
+23968 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Initializing ProtocolHandler ["http-nio-8081"]
+23985 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Starting ProtocolHandler [http-nio-8081]
+24021 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Correlation Id: - Using a shared selector for servlet write/read
+24062 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat started on port(s): 8081 (http)
+24399 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employees
+24419 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - Correlation Id: - HHH000397: Using ASTQueryTranslatorFactory
+24589 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
+24590 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=2, firstName='Ann', lastName='Jee', age=34, address='Chennai', email='ann.jeeu@gmail.com']
+24591 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=3, firstName='Bann', lastName='Hee', age=36, address='Hydrabad', email='bann.hee@gmail.com']
+24591 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+24592 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=5, firstName='Dann', lastName='lee', age=28, address='Delhi', email='dann.lee@gmail.com']
+24593 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=6, firstName='Kann', lastName='Mde', age=45, address='Kolkata', email='kann.mde@gmail.com']
+24593 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=7, firstName='Zann', lastName='Nke', age=53, address='Cochin', email='zann.nke@gmail.com']
+24600 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Started EmpDetailsMasterApplication in 23.807 seconds (JVM running for 26.511)
+38457 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring FrameworkServlet 'dispatcherServlet'
+38458 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization started
+38571 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization completed in 112 ms
+38647 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: - EmpDetailsController path variable: Employee ID 4
+39052 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$b4da9df8-1] INFO  c.a.m.e.d.service.EmpDetailsService - Correlation Id: - EmpDetailsService getEmployeeDetails: Employee ID 4
+39053 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$b4da9df8-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: - EmpDetailsDataService getEmployeeDetails Employee ID passed: 4
+39092 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$b4da9df8-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: - EmpDetailsDataService getEmployeeDetails Employee Details:Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+39100 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: - EmpDetailsController getEmployeeDetails resultEmployee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+197432 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Correlation Id: - Application shutdown requested.
+197434 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Correlation Id: - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609640d5: startup date [Wed Feb 01 13:17:46 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@28dcca0c
+197438 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Stopping beans in phase 2147483647
+197440 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Stopping beans in phase 0
+197456 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans on shutdown
+197457 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans
+197458 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans on shutdown
+197459 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans
+197482 [RMI TCP Connection(2)-10.232.98.59] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Closing JPA EntityManagerFactory for persistence unit 'default'
+197484 [RMI TCP Connection(2)-10.232.98.59] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000227: Running hbm2ddl schema export
+197496 [RMI TCP Connection(2)-10.232.98.59] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000230: Schema export complete
+197501 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Pausing ProtocolHandler ["http-nio-8081"]
+197520 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.catalina.core.StandardService - Correlation Id: - Stopping service Tomcat
+197528 [localhost-startStop-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Destroying Spring FrameworkServlet 'dispatcherServlet'
+197561 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+197562 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+197563 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+197571 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Stopping ProtocolHandler ["http-nio-8081"]
+197578 [RMI TCP Connection(2)-10.232.98.59] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Destroying ProtocolHandler ["http-nio-8081"]
+1760 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Correlation Id: - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506: startup date [Wed Feb 01 13:22:41 IST 2017]; root of context hierarchy
+2006 [background-preinit] INFO  o.h.validator.internal.util.Version - Correlation Id: - HV000001: Hibernate Validator 5.2.4.Final
+2305 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cafca87f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2992 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - No active profile set, falling back to default profiles: default
+3014 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Correlation Id: - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66ce957f: startup date [Wed Feb 01 13:22:43 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506
+6105 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Correlation Id: - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+6814 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Correlation Id: - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+7258 [main] INFO  o.s.c.context.scope.GenericScope - Correlation Id: - BeanFactory id=be2a5a46-e399-38b5-89f5-a5cc6262aebf
+7486 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$537a6a81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+7565 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Correlation Id: - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+7685 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aee2a582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+8175 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cafca87f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+9392 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat initialized with port(s): 8081 (http)
+9410 [main] INFO  o.a.catalina.core.StandardService - Correlation Id: - Starting service Tomcat
+9412 [main] INFO  o.a.catalina.core.StandardEngine - Correlation Id: - Starting Servlet Engine: Apache Tomcat/8.5.5
+9977 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring embedded WebApplicationContext
+9979 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Correlation Id: - Root WebApplicationContext: initialization completed in 6965 ms
+11269 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'metricsFilter' to: [/*]
+11270 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'characterEncodingFilter' to: [/*]
+11271 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+11271 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+11272 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'requestContextFilter' to: [/*]
+11273 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+11274 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'correlationHeaderFilter' to urls: [/*]
+11275 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'applicationContextIdFilter' to: [/*]
+11275 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'dispatcherServlet' to [/]
+11281 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+12440 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Building JPA container EntityManagerFactory for persistence unit 'default'
+12509 [main] INFO  o.h.jpa.internal.util.LogHelper - Correlation Id: - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+12736 [main] INFO  org.hibernate.Version - Correlation Id: - HHH000412: Hibernate Core {5.0.11.Final}
+12738 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000206: hibernate.properties not found
+12740 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000021: Bytecode provider name : javassist
+12808 [main] INFO  o.h.annotations.common.Version - Correlation Id: - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+13096 [main] INFO  org.hibernate.dialect.Dialect - Correlation Id: - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+13975 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000227: Running hbm2ddl schema export
+13991 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000230: Schema export complete
+14035 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16563 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[DELETE]}" onto public java.lang.String com.accenture.microservices.emp.details.web.EmpDetailsController.deleteEmployee(long) throws java.lang.Exception
+16565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees],methods=[GET]}" onto public java.util.List<com.accenture.microservices.emp.details.data.EmployeeDetails> com.accenture.microservices.emp.details.web.EmpDetailsController.getAllEmployees() throws java.lang.Exception
+16566 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[GET]}" onto public com.accenture.microservices.emp.details.data.EmployeeDetails com.accenture.microservices.emp.details.web.EmpDetailsController.getEmployeeDetails(long) throws java.lang.Exception
+16567 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+16573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+16582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+16583 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+16589 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16590 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16752 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+16754 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+16772 [main] INFO  c.n.config.DynamicPropertyFactory - Correlation Id: - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@42db3ff
+17743 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17745 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17747 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17754 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+17755 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17757 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+17762 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+17763 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+17765 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+17766 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+17769 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+17784 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+17786 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+17787 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17796 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+17802 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17804 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17807 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17809 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+17810 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+17811 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+17812 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+18702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Correlation Id: - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66ce957f: startup date [Wed Feb 01 13:22:43 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506
+19047 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19047 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+19210 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+21051 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+21051 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21405 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+21509 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+21511 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+21512 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+21513 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshScope' has been autodetected for JMX exposure
+21514 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'environmentManager' has been autodetected for JMX exposure
+21518 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+21615 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+21633 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+21650 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=66ce957f,type=ConfigurationPropertiesRebinder]
+21711 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+21713 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+22232 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 0
+22236 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+22255 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+22261 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+22321 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+22332 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+22336 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+22340 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+22344 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+22347 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+22352 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+22356 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+22361 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 2147483647
+22362 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Context refreshed
+22483 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Found 1 custom documentation plugin(s)
+22566 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Correlation Id: - Scanning for api listing references
+23164 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Correlation Id: - Starting poller
+23317 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Initializing ProtocolHandler ["http-nio-8081"]
+23362 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Starting ProtocolHandler [http-nio-8081]
+23396 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Correlation Id: - Using a shared selector for servlet write/read
+23531 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat started on port(s): 8081 (http)
+24194 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employees
+24244 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - Correlation Id: - HHH000397: Using ASTQueryTranslatorFactory
+24794 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
+24795 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=2, firstName='Ann', lastName='Jee', age=34, address='Chennai', email='ann.jeeu@gmail.com']
+24795 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=3, firstName='Bann', lastName='Hee', age=36, address='Hydrabad', email='bann.hee@gmail.com']
+24795 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+24796 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=5, firstName='Dann', lastName='lee', age=28, address='Delhi', email='dann.lee@gmail.com']
+24796 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=6, firstName='Kann', lastName='Mde', age=45, address='Kolkata', email='kann.mde@gmail.com']
+24798 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=7, firstName='Zann', lastName='Nke', age=53, address='Cochin', email='zann.nke@gmail.com']
+24806 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Started EmpDetailsMasterApplication in 24.029 seconds (JVM running for 26.82)
+397549 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring FrameworkServlet 'dispatcherServlet'
+397558 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization started
+397758 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization completed in 199 ms
+397800 [http-nio-8081-exec-1] INFO  c.a.m.e.d.s.CorrelationHeaderFilter - Correlation Id: - No correlationId found in Header. Generated : c2ab0e4d-94c9-46fa-b004-74f64ba9fd59
+397875 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: c2ab0e4d-94c9-46fa-b004-74f64ba9fd59- EmpDetailsController path variable: Employee ID 4
+398776 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$7194654e-1] INFO  c.a.m.e.d.service.EmpDetailsService - Correlation Id: - EmpDetailsService getEmployeeDetails: Employee ID 4
+398777 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$7194654e-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: - EmpDetailsDataService getEmployeeDetails Employee ID passed: 4
+398851 [hystrix-EmpDetailsService$$EnhancerBySpringCGLIB$$7194654e-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: - EmpDetailsDataService getEmployeeDetails Employee Details:Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+398862 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: c2ab0e4d-94c9-46fa-b004-74f64ba9fd59- EmpDetailsController getEmployeeDetails resultEmployee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+618618 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Correlation Id: - Application shutdown requested.
+618624 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Correlation Id: - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66ce957f: startup date [Wed Feb 01 13:22:43 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506
+618654 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Stopping beans in phase 2147483647
+618660 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Stopping beans in phase 0
+618675 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans on shutdown
+618676 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans
+618678 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans on shutdown
+618678 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Unregistering JMX-exposed beans
+618698 [RMI TCP Connection(2)-192.168.99.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Closing JPA EntityManagerFactory for persistence unit 'default'
+618703 [RMI TCP Connection(2)-192.168.99.1] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000227: Running hbm2ddl schema export
+618715 [RMI TCP Connection(2)-192.168.99.1] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000230: Schema export complete
+618733 [RMI TCP Connection(2)-192.168.99.1] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Pausing ProtocolHandler ["http-nio-8081"]
+618801 [RMI TCP Connection(2)-192.168.99.1] INFO  o.a.catalina.core.StandardService - Correlation Id: - Stopping service Tomcat
+618813 [localhost-startStop-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Destroying Spring FrameworkServlet 'dispatcherServlet'
+618852 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+618854 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxScheduledExecutorPool-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+618857 [localhost-startStop-2] WARN  o.a.c.loader.WebappClassLoaderBase - Correlation Id: - The web application [ROOT] appears to have started a thread named [RxComputationScheduler-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+618878 [RMI TCP Connection(2)-192.168.99.1] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Stopping ProtocolHandler ["http-nio-8081"]
+618890 [RMI TCP Connection(2)-192.168.99.1] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Destroying ProtocolHandler ["http-nio-8081"]
+2386 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Correlation Id: - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506: startup date [Wed Feb 01 13:33:09 IST 2017]; root of context hierarchy
+2861 [background-preinit] INFO  o.h.validator.internal.util.Version - Correlation Id: - HV000001: Hibernate Validator 5.2.4.Final
+3074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cafca87f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+4164 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - No active profile set, falling back to default profiles: default
+4195 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Correlation Id: - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@666b83a4: startup date [Wed Feb 01 13:33:11 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506
+7947 [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Correlation Id: - Overriding bean definition for bean 'hystrixFeature' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration$HystrixWebConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration$HystrixWebConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.hystrix.HystrixCircuitBreakerConfiguration; factoryMethodName=hystrixFeature; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/hystrix/HystrixCircuitBreakerConfiguration.class]]
+8672 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Correlation Id: - Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+9233 [main] INFO  o.s.c.context.scope.GenericScope - Correlation Id: - BeanFactory id=be2a5a46-e399-38b5-89f5-a5cc6262aebf
+9518 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [class org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$537a6a81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+9651 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Correlation Id: - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+9834 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aee2a582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10334 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Correlation Id: - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cafca87f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11608 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat initialized with port(s): 8081 (http)
+11664 [main] INFO  o.a.catalina.core.StandardService - Correlation Id: - Starting service Tomcat
+11666 [main] INFO  o.a.catalina.core.StandardEngine - Correlation Id: - Starting Servlet Engine: Apache Tomcat/8.5.5
+12414 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring embedded WebApplicationContext
+12416 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Correlation Id: - Root WebApplicationContext: initialization completed in 8221 ms
+13986 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'metricsFilter' to: [/*]
+13987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'characterEncodingFilter' to: [/*]
+13988 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13988 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13989 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'requestContextFilter' to: [/*]
+13990 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+13991 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'correlationHeaderFilter' to urls: [/*]
+13991 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Correlation Id: - Mapping filter: 'applicationContextIdFilter' to: [/*]
+13992 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'dispatcherServlet' to [/]
+13995 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Correlation Id: - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+15248 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Building JPA container EntityManagerFactory for persistence unit 'default'
+15335 [main] INFO  o.h.jpa.internal.util.LogHelper - Correlation Id: - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15516 [main] INFO  org.hibernate.Version - Correlation Id: - HHH000412: Hibernate Core {5.0.11.Final}
+15520 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000206: hibernate.properties not found
+15523 [main] INFO  org.hibernate.cfg.Environment - Correlation Id: - HHH000021: Bytecode provider name : javassist
+15606 [main] INFO  o.h.annotations.common.Version - Correlation Id: - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16100 [main] INFO  org.hibernate.dialect.Dialect - Correlation Id: - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+16982 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000227: Running hbm2ddl schema export
+17013 [main] INFO  o.h.tool.hbm2ddl.SchemaExport - Correlation Id: - HHH000230: Schema export complete
+17136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Correlation Id: - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20600 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[DELETE]}" onto public java.lang.String com.accenture.microservices.emp.details.web.EmpDetailsController.deleteEmployee(long) throws java.lang.Exception
+20602 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees],methods=[GET]}" onto public java.util.List<com.accenture.microservices.emp.details.data.EmployeeDetails> com.accenture.microservices.emp.details.web.EmpDetailsController.getAllEmployees() throws java.lang.Exception
+20604 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/employees/{empId}],methods=[GET]}" onto public com.accenture.microservices.emp.details.data.EmployeeDetails com.accenture.microservices.emp.details.web.EmpDetailsController.getEmployeeDetails(long) throws java.lang.Exception
+20605 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+20614 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+20615 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+20617 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+20691 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20693 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Correlation Id: - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20941 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+20943 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20994 [main] INFO  c.n.config.DynamicPropertyFactory - Correlation Id: - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@57777c23
+22221 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+22227 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+22234 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22237 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+22239 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+22241 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22242 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22245 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+22247 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22249 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+22251 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+22252 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+22253 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+22255 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22255 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+22258 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+22259 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22261 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22265 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+22265 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22266 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+22267 [main] INFO  o.s.b.a.e.m.EndpointHandlerMapping - Correlation Id: - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+23346 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Correlation Id: - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@666b83a4: startup date [Wed Feb 01 13:33:11 IST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@66982506
+23637 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23926 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Correlation Id: - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+25699 [main] WARN  c.n.c.s.URLConfigurationSource - Correlation Id: - No URLs will be polled as dynamic configuration sources.
+25700 [main] INFO  c.n.c.s.URLConfigurationSource - Correlation Id: - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+26108 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+26163 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+26164 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+26166 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+26167 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'refreshScope' has been autodetected for JMX exposure
+26170 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Bean with name 'environmentManager' has been autodetected for JMX exposure
+26174 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+26243 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+26272 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+26287 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=666b83a4,type=ConfigurationPropertiesRebinder]
+26311 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Correlation Id: - Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+26314 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Registering beans for JMX exposure on startup
+26812 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 0
+26818 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+26852 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+26996 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+27005 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+27012 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+27017 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+27023 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+27031 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+27038 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+27052 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+27140 [main] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Correlation Id: - Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+27146 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Correlation Id: - Starting beans in phase 2147483647
+27146 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Context refreshed
+27285 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Correlation Id: - Found 1 custom documentation plugin(s)
+27392 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Correlation Id: - Scanning for api listing references
+27877 [main] INFO  o.s.c.n.h.HystrixCircuitBreakerConfiguration$HystrixMetricsPollerConfiguration - Correlation Id: - Starting poller
+27948 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Initializing ProtocolHandler ["http-nio-8081"]
+28041 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Correlation Id: - Starting ProtocolHandler [http-nio-8081]
+28181 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Correlation Id: - Using a shared selector for servlet write/read
+28215 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Correlation Id: - Tomcat started on port(s): 8081 (http)
+28631 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employees
+28690 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - Correlation Id: - HHH000397: Using ASTQueryTranslatorFactory
+29099 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=1, firstName='Jakie', lastName='Ezu', age=21, address='bangalore', email='jakie.ezu@gmail.com']
+29100 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=2, firstName='Ann', lastName='Jee', age=34, address='Chennai', email='ann.jeeu@gmail.com']
+29100 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=3, firstName='Bann', lastName='Hee', age=36, address='Hydrabad', email='bann.hee@gmail.com']
+29101 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+29102 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=5, firstName='Dann', lastName='lee', age=28, address='Delhi', email='dann.lee@gmail.com']
+29102 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=6, firstName='Kann', lastName='Mde', age=45, address='Kolkata', email='kann.mde@gmail.com']
+29103 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Employee[id=7, firstName='Zann', lastName='Nke', age=53, address='Cochin', email='zann.nke@gmail.com']
+29113 [main] INFO  c.a.m.e.d.EmpDetailsMasterApplication - Correlation Id: - Started EmpDetailsMasterApplication in 28.282 seconds (JVM running for 30.909)
+203300 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Correlation Id: - Initializing Spring FrameworkServlet 'dispatcherServlet'
+203301 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization started
+203407 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Correlation Id: - FrameworkServlet 'dispatcherServlet': initialization completed in 105 ms
+203439 [http-nio-8081-exec-1] INFO  c.a.m.e.d.s.CorrelationHeaderFilter - Correlation Id: - No correlationId found in Header. Generated : 74379ad2-f571-4edd-8b52-70a4a038cffa
+203478 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: 74379ad2-f571-4edd-8b52-70a4a038cffa- EmpDetailsController path variable: Employee ID 4
+203755 [http-nio-8081-exec-1] INFO  c.a.m.e.d.service.EmpDetailsService - Correlation Id: 74379ad2-f571-4edd-8b52-70a4a038cffa- EmpDetailsService getEmployeeDetails: Employee ID 4
+203756 [http-nio-8081-exec-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: 74379ad2-f571-4edd-8b52-70a4a038cffa- EmpDetailsDataService getEmployeeDetails Employee ID passed: 4
+203779 [http-nio-8081-exec-1] INFO  c.a.m.e.d.d.s.EmpDetailsDataService - Correlation Id: 74379ad2-f571-4edd-8b52-70a4a038cffa- EmpDetailsDataService getEmployeeDetails Employee Details:Employee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
+203786 [http-nio-8081-exec-1] INFO  c.a.m.e.d.web.EmpDetailsController - Correlation Id: 74379ad2-f571-4edd-8b52-70a4a038cffa- EmpDetailsController getEmployeeDetails resultEmployee[id=4, firstName='Cann', lastName='lee', age=25, address='Mumbai', email='cann.lee@gmail.com']
