@@ -9,11 +9,10 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
+import com.accenture.lari.employees.repository.EmployeeRepository;
 import com.accenture.lari.employees.service.EmpDetailsService;
 import com.accenture.lari.employees.service.impl.data.EmpDetailsDataService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -25,19 +24,20 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
  *
  */
 
-@SpringBootApplication
-@Component
 @Service
 public class EmpDetailsServiceImpl implements EmpDetailsService {
 	public static final Logger log = LoggerFactory.getLogger(EmpDetailsServiceImpl.class);
 
+	/*@Autowired
+	EmpDetailsDataService empDetailsDataService;*/
+	
 	@Autowired
-	EmpDetailsDataService empDetailsDataService;
+	EmployeeRepository employeeRepository;
 
 	@HystrixCommand(fallbackMethod = "handleEmployeeDetails")
 	public EmployeeDetails getEmployeeDetails(long id) throws Exception {
 		log.info("EmpDetailsService getEmployeeDetails: Employee ID " + id);
-		EmployeeDetails empDetails = empDetailsDataService.getEmployeeDetails(id);
+		EmployeeDetails empDetails = employeeRepository.findById(id);//empDetailsDataService.getEmployeeDetails(id);
 		return empDetails;
 	}
 
@@ -59,7 +59,7 @@ public class EmpDetailsServiceImpl implements EmpDetailsService {
 	public boolean checkEmployeeExists(long id) throws Exception {
 		log.info("EmpDetailsService checkEmployeeExists: Employee ID " + id);
 		boolean result = false;
-		result = empDetailsDataService.checkEmployeeExists(id);
+		result = employeeRepository.exists(id);//empDetailsDataService.checkEmployeeExists(id);
 		log.info("EmployeeDetails checkEmployeeExists result" + result);
 		return result;
 	}
@@ -68,7 +68,7 @@ public class EmpDetailsServiceImpl implements EmpDetailsService {
 	public List<EmployeeDetails> getAllEmployees() throws Exception {
 		log.info("EmpDetailsService getAllEmployees ");
 		List<EmployeeDetails> emplList = new ArrayList<EmployeeDetails>();
-		emplList = empDetailsDataService.getAllEmployees();
+		emplList = employeeRepository.findAll();//empDetailsDataService.getAllEmployees();
 		log.info("EmpDetailsService getAllEmployees List:: " + emplList);
 		return emplList;
 	}
@@ -84,7 +84,7 @@ public class EmpDetailsServiceImpl implements EmpDetailsService {
 		log.info("EmpDetailsService DeleteEmployeeDetails Employee ID passed: " + id);
 		String result = "false";
 		if (checkEmployeeExists(id)) {
-			empDetailsDataService.deleteEmployeeDetails(id);
+			employeeRepository.delete(id);//empDetailsDataService.deleteEmployeeDetails(id);
 			result = "true";
 		} else {
 			result = "Employee Does not Exist. Please provide an existing employee";

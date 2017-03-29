@@ -27,7 +27,6 @@ import io.swagger.annotations.ApiOperation;
  *
  */
 @RestController
-@SpringBootApplication
 @Api(tags = "Employee Details API")
 public class EmpDetailsController {
 	private static final Logger log = LoggerFactory.getLogger(EmpDetailsController.class);

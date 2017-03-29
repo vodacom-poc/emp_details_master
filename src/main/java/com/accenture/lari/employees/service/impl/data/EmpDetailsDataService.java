@@ -1,14 +1,10 @@
 package com.accenture.lari.employees.service.impl.data;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
 import com.accenture.lari.employees.repository.EmployeeRepository;
@@ -19,10 +15,6 @@ import com.accenture.lari.employees.repository.EmployeeRepository;
  * @author mahima.agarwal
  *
  */
-
-@SpringBootApplication
-@Component
-@Service
 public class EmpDetailsDataService {
 	public static final Logger log = LoggerFactory.getLogger(EmpDetailsDataService.class);
 	
