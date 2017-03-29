@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 import com.accenture.lari.employees.domain.EmployeeDetails;
 import com.accenture.lari.employees.repository.EmployeeRepository;
 import com.accenture.lari.employees.service.EmpDetailsService;
-import com.accenture.lari.employees.service.impl.data.EmpDetailsDataService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 /**
