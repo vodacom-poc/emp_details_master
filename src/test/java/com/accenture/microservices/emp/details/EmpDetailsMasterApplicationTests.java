@@ -2,6 +2,7 @@ package com.accenture.microservices.emp.details;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -214,13 +215,15 @@ private SetterMessage message = null;*/
      * @return: true
      * @expected result: Employee Does not Exist. Please provide an existing employee
      * 
-     *//*
+     */
+	
 	@Test
 	public void deleteEmployeeDetails() throws Exception {
-		MvcResult result = mockMvc.perform(delete("/employees/1")).andDo(print()).andReturn();
+		MvcResult result = mockMvc.perform(delete("/employees/12331")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
 	}
 	
+	/*
 	 *//**
      * 
      * @throws Exception
@@ -229,13 +232,13 @@ private SetterMessage message = null;*/
      * @return: false
      * @expected result: false
      * 
-     *//*
+     */
      
      
 	@Test
 	public void deleteEmployee() throws Exception {
 		MvcResult result = mockMvc.perform(delete("/employees/1233")).andDo(print()).andReturn();
 		log.info(result.getResponse().getContentAsString());
-	}*/
+	}
 
 }
