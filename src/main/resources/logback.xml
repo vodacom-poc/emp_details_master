@@ -25,7 +25,7 @@
     <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender"> 
      <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
      <encoder>
-	    <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - Correlation Id: %X{CorrelationId}- %msg%n</Pattern>
+	     <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
 	  </encoder>
 	</appender>
 
@@ -34,7 +34,7 @@
       <file>${LOG_PATH}</file>
       <append>true</append>
       <encoder>
-         <pattern>%-4relative [%thread] %-5level %logger{35} - Correlation Id: %X{CorrelationId}- %msg%n</pattern>
+         <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
       </encoder>
    </appender>
     
@@ -60,14 +60,14 @@
 <!--             </providers> -->
 <!--         </encoder> -->
 <!--     </appender> -->
-		<conversionRule conversionWord="syslogStart" converterClass="ch.qos.logback.classic.pattern.SyslogStartConverter"/>
+		<!-- <conversionRule conversionWord="syslogStart" converterClass="ch.qos.logback.classic.pattern.SyslogStartConverter"/> -->
  		<appender name="STASH" class="net.logstash.logback.appender.LogstashSocketAppender">
 				<host>54.208.170.219</host>
 				 <port>25826</port>
-                 <customFields>{"appname":"emp-details-ms"}</customFields> 
+                 <customFields>{"appname":"emp-details-ms"}</customFields>  
                 <prefix class="ch.qos.logback.classic.PatternLayout">
-       				<pattern>%syslogStart{LOCAL5}</pattern>
-    </prefix>
+       				<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
+    		</prefix>
      	</appender>
 
 <!--     <logger name="jsonLogger" additivity="false" level="DEBUG"> -->
