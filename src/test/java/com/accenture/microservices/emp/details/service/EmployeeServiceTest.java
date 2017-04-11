@@ -17,7 +17,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
-import com.accenture.lari.employees.repository.EmployeeRepository;
+import com.accenture.lari.employees.repository.EmployeeDetailsRepository;
 import com.accenture.lari.employees.service.impl.EmpDetailsServiceImpl;
 
 @RunWith(SpringRunner.class)
@@ -28,7 +28,7 @@ public class EmployeeServiceTest {
 	EmpDetailsServiceImpl empDetailsService;
 	
 	@MockBean
-	EmployeeRepository employeeRepository;
+	EmployeeDetailsRepository employeeDetailsRepository;
 
 	@Test
 	public void validateChargeCode() throws Exception {

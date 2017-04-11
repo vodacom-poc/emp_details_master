@@ -21,7 +21,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
-import com.accenture.lari.employees.repository.EmployeeRepository;
+import com.accenture.lari.employees.repository.EmployeeDetailsRepository;
 import com.accenture.lari.employees.service.impl.EmpDetailsServiceImpl;
 import com.accenture.microservices.emp.details.ApplicationTestConstants;
 
@@ -38,7 +38,7 @@ public class EmpDetailsServiceImplTest {
 	EmpDetailsServiceImpl empDetailsService;
 	
 	@MockBean
-	EmployeeRepository employeeRepository;
+	EmployeeDetailsRepository employeeDetailsRepository;
 
 
 	/**
@@ -104,7 +104,7 @@ public class EmpDetailsServiceImplTest {
 	 */
 	@Test
 	public void testDeleteEmployeeDetailsSuccess() throws Exception {
-		employeeRepository.save(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE());
+		employeeDetailsRepository.save(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE());
 		String result =this.empDetailsService.deleteEmployeeDetails(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE().getId());
 		log.info("from service layer EmpDetailsServiceImplTest class - testDeleteEmployeeDetailsSuccess(): " + result);
 		assertThat(result.equals(ApplicationTestConstants.SUCCESS));

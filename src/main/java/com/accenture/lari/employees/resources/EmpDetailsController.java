@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
-import com.accenture.lari.employees.repository.EmployeeRepository;
+import com.accenture.lari.employees.repository.EmployeeDetailsRepository;
 import com.accenture.lari.employees.service.impl.EmpDetailsServiceImpl;
 
 import io.swagger.annotations.Api;
@@ -33,9 +33,9 @@ public class EmpDetailsController {
 	
 	@Autowired
 	EmpDetailsServiceImpl empDetailsService;
-	
+	/*
 	@Autowired
-	EmployeeRepository repository;
+	EmployeeDetailsRepository repository;*/
 	
 	@ApiOperation(value = "EmployeeDetails", nickname = "EmployeeDetails")
 	@RequestMapping(value = "/employees/{empId}",method = RequestMethod.GET)
@@ -48,14 +48,14 @@ public class EmpDetailsController {
 		return emplDetails;
 	}
 	
-//	@RequestMapping(value = "/employees/validate/{empId}",method = RequestMethod.GET)
-//	public boolean validateEmployee(@PathVariable ("empId") long id) throws Exception{
-//		log.info("EmpDetailsController path variable: Employee ID "+id);
-//		boolean result = false;
-//		result = empDetailsService.checkEmployeeExists(id);
-//		log.info("EmpDetailsController validateEmployee result" + result);
-//		return result;
-//	}
+	@RequestMapping(value = "/employees/validate/{empId}",method = RequestMethod.GET)
+	public boolean validateEmployee(@PathVariable ("empId") long id) throws Exception{
+		log.info("EmpDetailsController path variable: Employee ID "+id);
+		boolean result = false;
+		result = empDetailsService.checkEmployeeExists(id);
+		log.info("EmpDetailsController validateEmployee result" + result);
+		return result;
+	}
 	
 	@ApiOperation(value = "GetAllEmployeeDetails", nickname = "GetAllEmployeeDetails")
 	@RequestMapping(value = "/employees",method = RequestMethod.GET)

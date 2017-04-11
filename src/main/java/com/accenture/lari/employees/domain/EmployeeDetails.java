@@ -3,25 +3,31 @@
  */
 package com.accenture.lari.employees.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.data.couchbase.core.mapping.Document;
+
+import com.couchbase.client.java.repository.annotation.Field;
+import com.couchbase.client.java.repository.annotation.Id;
 
 /**
  * @author mahima.agarwal
  *
  */
-@Entity
+@Document
 public class EmployeeDetails{
 	
 		@Id
+		@Field
 	    //@GeneratedValue(strategy=GenerationType.AUTO)
 	    private long id;
+		@Field
 	    private String firstName;
+		@Field
 	    private String lastName;
+		@Field
 	    private long age;
+		@Field
 	    private String address;
+		@Field
 	    private String email;
 //	    public long employeeId;
 

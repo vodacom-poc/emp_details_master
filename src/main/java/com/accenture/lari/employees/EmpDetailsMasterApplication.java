@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import com.accenture.lari.employees.domain.EmployeeDetails;
-import com.accenture.lari.employees.repository.EmployeeRepository;
+import com.accenture.lari.employees.repository.EmployeeDetailsRepository;
 import com.accenture.lari.utils.CorrelationHeaderFilter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -87,8 +87,8 @@ public class EmpDetailsMasterApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(EmpDetailsMasterApplication.class);
 
-		  @Bean
-		public CommandLineRunner demo(EmployeeRepository repository){
+		/*  @Bean
+		public CommandLineRunner demo(EmployeeDetailsRepository repository){
 	    	return (args) ->{
 	    		repository.save(new EmployeeDetails("Jakie", "Ezu", 21, "bangalore", "jakie.ezu@gmail.com", 13333));
 	    		repository.save(new EmployeeDetails("Ann", "Jee", 34, "Chennai", "ann.jeeu@gmail.com", 1233));
@@ -103,5 +103,5 @@ public class EmpDetailsMasterApplication {
 	    			log.info(Employee.toString());
 	    	}
 	     };   	
-	    }
+	    }*/
 }
