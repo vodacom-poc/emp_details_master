@@ -64,17 +64,17 @@
  		<appender name="STASH" class="net.logstash.logback.appender.LogstashSocketAppender">
 				<host>54.208.170.219</host>
 				 <port>25826</port>
-                 <customFields>{"appname":"emp-details-ms"}</customFields> 
-                <!-- <prefix class="ch.qos.logback.classic.PatternLayout">
+                 <customFields>{"appname":"emp-details-ms"}</customFields>  
+                <!--<prefix class="ch.qos.logback.classic.PatternLayout">
        				<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} CorrelationId %X{CorrelationId} - %msg%n</Pattern>
-    		</prefix>  -->
+    		</prefix>-->
      	</appender>
 
 <!--     <logger name="jsonLogger" additivity="false" level="DEBUG"> -->
 <!--         <appender-ref ref="jsonAppender"/> -->
 
 <!--     </logger> -->
-    <root level="info">
+    <root level="debug">
          <appender-ref ref="FILE"/>
          <appender-ref ref="STASH"/>
          <appender-ref ref="consoleAppender"/>
