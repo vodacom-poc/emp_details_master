@@ -38,7 +38,7 @@ public class EmpDetailsServiceImplTest {
 	EmpDetailsServiceImpl empDetailsService;
 	
 	@MockBean
-	EmployeeDetailsRepository employeeDetailsRepository;
+	EmployeeDetailsRepository employeeRepository;
 
 
 	/**
@@ -104,7 +104,7 @@ public class EmpDetailsServiceImplTest {
 	 */
 	@Test
 	public void testDeleteEmployeeDetailsSuccess() throws Exception {
-		employeeDetailsRepository.save(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE());
+		employeeRepository.save(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE());
 		String result =this.empDetailsService.deleteEmployeeDetails(ApplicationTestConstants.EMPLOYEE_DETAILS_SAVE().getId());
 		log.info("from service layer EmpDetailsServiceImplTest class - testDeleteEmployeeDetailsSuccess(): " + result);
 		assertThat(result.equals(ApplicationTestConstants.SUCCESS));
