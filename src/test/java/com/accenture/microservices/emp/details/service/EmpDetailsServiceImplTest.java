@@ -40,7 +40,6 @@ public class EmpDetailsServiceImplTest {
 	@MockBean
 	EmployeeDetailsRepository employeeRepository;
 
-
 	/**
 	 * Test method for {@link com.accenture.lari.employees.service.impl.EmpDetailsServiceImpl#getEmployeeDetails(long)}.
 	 */
@@ -51,7 +50,6 @@ public class EmpDetailsServiceImplTest {
 		log.info("from service layer EmpDetailsServiceImplTest class - testGetEmployeeDetails(): " + employeeDetails.toString());
 		assertThat(employeeDetails.getId()).isEqualTo(ApplicationTestConstants.EMPLOYEE_ID);
 	}
-
 	/**
 	 * Test method for {@link com.accenture.lari.employees.service.impl.EmpDetailsServiceImpl#handleEmployeeDetails(long, java.lang.Throwable)}.
 	 */
