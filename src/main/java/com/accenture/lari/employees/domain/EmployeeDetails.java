@@ -3,31 +3,30 @@
  */
 package com.accenture.lari.employees.domain;
 
-import org.springframework.data.couchbase.core.mapping.Document;
-
-import com.couchbase.client.java.repository.annotation.Field;
-import com.couchbase.client.java.repository.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @author mahima.agarwal
  *
  */
-@Document
+//@Document
+@Entity
 public class EmployeeDetails{
 	
 		@Id
-		@Field
+		//@Field
 	    //@GeneratedValue(strategy=GenerationType.AUTO)
 	    private long id;
-		@Field
+		//@Field
 	    private String firstName;
-		@Field
+		//@Field
 	    private String lastName;
-		@Field
+		//@Field
 	    private long age;
-		@Field
+		//@Field
 	    private String address;
-		@Field
+		//@Field
 	    private String email;
 //	    public long employeeId;
 

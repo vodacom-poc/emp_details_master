@@ -87,7 +87,7 @@ public class EmpDetailsMasterApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(EmpDetailsMasterApplication.class);
 
-		/*  @Bean
+		  @Bean
 		public CommandLineRunner demo(EmployeeDetailsRepository repository){
 	    	return (args) ->{
 	    		repository.save(new EmployeeDetails("Jakie", "Ezu", 21, "bangalore", "jakie.ezu@gmail.com", 13333));
@@ -103,5 +103,5 @@ public class EmpDetailsMasterApplication {
 	    			log.info(Employee.toString());
 	    	}
 	     };   	
-	    }*/
+	    }
 }
