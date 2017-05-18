@@ -1,7 +1,7 @@
 <configuration>
 	    <property name="LOG_PATH" value="log/application.log" />
 	    
-	  
+	   <!-- <include resource="org/springframework/boot/logging/logback/base.xml"/> <jmxConfigurator/> --> 
     
 <!--     <appender name="jsonAppender" class="ch.qos.logback.core.rolling.RollingFileAppender"> -->
 <!--         <File>${LOG_PATH}</File> -->
@@ -79,4 +79,5 @@
          <appender-ref ref="STASH"/>
          <appender-ref ref="consoleAppender"/>
     </root>
+
 </configuration>
