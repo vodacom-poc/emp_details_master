@@ -123,7 +123,7 @@
 		  
 		  <!-- End -->
 		  
-		 <!-- PACT Dependancy -->
+		 <!-- PACT Dependency -->
 		 <dependency>
 	    	<groupId>au.com.dius</groupId>
 	    	<artifactId>pact-jvm-provider-junit_2.11</artifactId>
@@ -131,7 +131,12 @@
 		</dependency>
 		 
         <!-- END -->
-		
+		<!-- Sleuth and Zipkin dependency -->
+		<dependency>
+  			<groupId>org.springframework.cloud</groupId>
+  			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+  		</dependency>
+  		<!-- END -->
 	</dependencies>
 	
 	<dependencyManagement>
