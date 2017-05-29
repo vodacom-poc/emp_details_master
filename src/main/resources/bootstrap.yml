@@ -1,7 +1,6 @@
 spring:
   application:
-    name:  empdetailsmaster  
-  profiles: default
+    name:  empdetailsmaster
   cloud:
     config:
       discovery:
