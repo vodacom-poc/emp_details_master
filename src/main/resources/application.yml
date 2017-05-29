@@ -15,7 +15,7 @@ eureka:
       
 ---
 spring:
-  profiles: default
+  profiles: docker
 eureka:
   instance:
     hostname: 54.145.29.160

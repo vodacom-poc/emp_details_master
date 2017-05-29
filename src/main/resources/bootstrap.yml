@@ -6,7 +6,7 @@ spring:
 
 ---
 spring:
-  profiles: default,native
+  profiles: docker,native
   cloud:
     config:
       discovery:
