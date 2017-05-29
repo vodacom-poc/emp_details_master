@@ -2,23 +2,5 @@ server:
   port: 8081
 app:
   artifactId: emp_details_v
----
-spring:
-  profiles: native
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
       
       
----
-spring:
-  profiles: docker
-eureka:
-  instance:
-    hostname: 54.145.29.160
-  client:
-    serviceUrl:
-      defaultZone: http://54.145.29.160:8761/eureka/
