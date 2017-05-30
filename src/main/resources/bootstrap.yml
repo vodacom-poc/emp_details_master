@@ -17,6 +17,15 @@ eureka:
       defaultZone: http://54.145.29.160:8761/eureka/
 ---
 spring:
+  profiles: dev
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+---
+spring:
   profiles: native
 eureka:
   instance:
