@@ -23,7 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<ch.qos.logback.version>1.1.6</ch.qos.logback.version>
-		<docker.image.prefix>leanarch</docker.image.prefix>
+		<docker.image.prefix>dockerhub.accenture.com/lean_arch</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -157,6 +157,11 @@
 			<artifactId>ApacheJMeter_core</artifactId>
 			<version>3.1</version>
 		</dependency>
+		<dependency> 
+			<groupId>org.jolokia</groupId> 
+			<artifactId>jolokia-core</artifactId> 
+		</dependency>  
+		
 	</dependencies>
 	
 	<dependencyManagement>
@@ -197,6 +202,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
+				<version>1.4.2.RELEASE</version>
+				<executions>
+	                <execution>
+	                    <goals>
+	                        <goal>build-info</goal>
+	                    </goals>
+	                </execution>
+            	</executions>
 			</plugin>
 			 <!-- Added for git check-in info -->
 	       <!--  <plugin>
@@ -293,6 +307,15 @@
                 </execution>
             </executions>
         </plugin>
+        
+        <!-- add Git commit information -->
+        <plugin>
+			    <groupId>pl.project13.maven</groupId>
+			    <artifactId>git-commit-id-plugin</artifactId>
+			    <version>2.1.13</version>
+			</plugin>
+		<!-- ends here -->
+        
 		</plugins>
 	</build>
 

@@ -1,6 +1,6 @@
 spring:
   application:
-    name:  empdetailsmaster
+    name:  employees
   cloud:
     config:
       discovery:
