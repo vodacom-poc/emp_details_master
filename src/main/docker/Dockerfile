@@ -2,7 +2,7 @@ FROM java:8
 MAINTAINER Mahima Agarwal  <mahima.agarwal@gmail.com>
 
 VOLUME /tmp
-ADD emp_details-2.0.jar  app.jar
+ADD emp_details-2.1.jar  app.jar
 RUN sh -c 'touch /app.jar'
 
 ENV JAVA_OPTS="-Xmx256m"
