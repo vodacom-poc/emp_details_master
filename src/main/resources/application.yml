@@ -5,12 +5,12 @@ app:
   artifactId: emp_details
   version: 2.1
 
----           
-spring:
-     rabbitmq:
-        host: ${RABBIT_IP:192.168.99.100}
-        port: ${RABBIT_PORT:15672}
-        virtual-host: /
-        username: ${RABBIT_USER:guest}
-        password: ${RABBIT_PASSWORD:guest}
+#---           
+#spring:
+#     rabbitmq:
+#        host: ${RABBIT_IP:192.168.99.100}
+#        port: ${RABBIT_PORT:15672}
+#        virtual-host: /
+#        username: ${RABBIT_USER:guest}
+#        password: ${RABBIT_PASSWORD:guest}
      
