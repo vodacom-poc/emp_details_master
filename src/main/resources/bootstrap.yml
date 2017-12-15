@@ -15,7 +15,7 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://eureka:8761/eureka}
   instance:
-    prefer-ip-address: false
+    prefer-ip-address: true
     #hostname: employees    
 ---
 spring:
